@@ -1,0 +1,35 @@
+a = 10
+b = 10
+c = 10
+i = 0
+Label0:
+t0 = a == 5
+ifFalse t0 goto Label1
+t1 = a + 5
+a = t1
+Label1:
+t2 = a + 5
+a = t2
+j = t2
+t3 = b == 5
+ifFalse t3 goto Label2
+goto Label1
+Label2:
+
+j = 1
+
+Label3:
+t3 = j < 10
+ifFalse t4 goto Label4
+
+t5 = c > 5
+ifFalse t5 goto JUMP0
+t6 = c + 1
+c = t6
+JUMP0:
+
+t7 = j + 1
+j = t7
+goto Label3
+Label4:
+
